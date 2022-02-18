@@ -8,8 +8,43 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/albatros.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/Aquatic-4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/argentinapolosur01.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div>
+    </div>
+
+
+
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000,
+            wrap: true
+        })
+    </script>
 </body>
 </html>
